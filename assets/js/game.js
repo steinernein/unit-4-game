@@ -14,14 +14,10 @@ var totalWins = 0;
 var totalLosses = 0;
 
 
-$("#targetPoint").text(randomTargetPointGoal);
-$("#yourPoint").text(userPoint);
-
-$("#totalWins").text(totalWins);
-$("#totalLosses").text(totalLosses);
-
-
-
+$("#targetPoint").text(randomTargetPointGoal); // display the random target point goal to the page.
+$("#yourPoint").text(userPoint); // display the user point to the page.
+$("#totalWins").text(totalWins); // display the total wins to the page.
+$("#totalLosses").text(totalLosses); // display the total losses to the page.
 
 
 $(document).ready(function() {
