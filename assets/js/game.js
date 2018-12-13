@@ -43,8 +43,8 @@ $(document).ready(function() {
             
         }
         else if (userPoint > randomTargetPointGoal) {
-            $("#yourPoint").text(userPoint);
-            setTimeout(function() {
+            $("#yourPoint").text(userPoint); // display your point to the page
+            setTimeout(function() { // call the timeout function
                 alert("Game over. You lose!");
                 
                 resetGame(); // call the reset function
@@ -64,10 +64,11 @@ $(document).ready(function() {
     });
 
     function resetGame() {
-        randomTargetPointGoal = Math.ceil(Math.random() * 100);
-        userPoint = 0;
-        $("#targetPoint").text(randomTargetPointGoal);
-        $("#yourPoint").text(userPoint);
+
+        randomTargetPointGoal = Math.ceil(Math.random() * 100); // set new random target point goal
+        userPoint = 0; // reset user point back to 0
+        $("#targetPoint").text(randomTargetPointGoal); // display the target point to the page
+        $("#yourPoint").text(userPoint); // display your point to the page
     }
 
 });
