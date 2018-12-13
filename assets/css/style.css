@@ -29,3 +29,11 @@ p#targetGoalPoint {
 p#yourCurrentPoint {
     color: green;
 }
+
+p#yourTotalWins {
+    color: lime;
+}
+
+p#yourTotalLosses {
+    color: maroon ;
+}

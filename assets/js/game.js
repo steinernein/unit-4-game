@@ -7,8 +7,19 @@ var randomTargetPointGoal = Math.ceil(Math.random() * 100);
 // user point
 var userPoint = 0;
 
+// total wins
+var totalWins = 0;
+
+// total losses
+var totalLosses = 0;
+
+
 $("#targetPoint").text(randomTargetPointGoal);
 $("#yourPoint").text(userPoint);
+
+$("#totalWins").text(totalWins);
+$("#totalLosses").text(totalLosses);
+
 
 
 
@@ -26,6 +37,10 @@ $(document).ready(function() {
                 resetGame(); // call the reset function
             }, 500);
 
+            totalWins++; // increment totalWins by 1
+
+            $("#totalWins").text(totalWins); // display the total wins to the page
+
            
 
             
@@ -38,6 +53,9 @@ $(document).ready(function() {
                 
                 resetGame(); // call the reset function
             }, 500);
+
+            totalLosses++; // increment total losses by 1
+            $("#totalLosses").text(totalLosses); // display the total losses to the page
 
     
           
