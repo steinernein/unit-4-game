@@ -1,4 +1,31 @@
+/* ELEMENTS CSS */
+
 img {
     width: 200px;
     height: 100px;
+}
+
+/* CLASSES CSS */
+
+h2.howToPlay {
+    color: red;
+}
+
+/* IDs CLASSES */
+
+h1#TonysPokemonPointMatchingGame {
+    text-align: center;
+    color: silver;
+}
+
+p#gameRule {
+    color: blue;
+}
+
+p#targetGoalPoint {
+    color: red;
+}
+
+p#yourCurrentPoint {
+    color: green;
 }

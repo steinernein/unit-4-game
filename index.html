@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Unit 4 Game</title>
+    <title>Tony's Pokemon Point Matching Game</title>
 </head>
 <body>
-    <h1>Tony's Unit 4 Game</h1>
-    <h2>How to Play</h2>
-    <p>You are given a random target point to match. Each image has a specific point value. Your goal is to click on the images to add up to 
-        the target point goal without having to go over. If you match your point to the target point, you win! If you go over, you lose! </p>
-    <p>Target point: <span id="targetPoint"></span></p>
-    <p>Your point: <span id="yourPoint"></span></p>
+    <h1 id="TonysPokemonPointMatchingGame">Tony's Pokemon Point Matching Game</h1>
+    <h2 class="howToPlay">How to Play</h2>
+    <p id="gameRule">You are given a random target point to match. Each image has a specific point value attached to it. Your goal is to click on the images and add up to 
+        the target point goal without having to go over. If you match your point to the target goal point, you win! If you go over, you lose! </p>
+    <p id="targetGoalPoint">Target point: <span id="targetPoint"></span></p>
+    <p id="yourCurrentPoint">Your point: <span id="yourPoint"></span></p>
     <div class="pointImage">
         <img src="assets/images/Bulbasaur.png" id="bulbasaur" value=1>
         <img src="assets/images/Charmander.jpg" id="charmander" value=2>
         <img src="assets/images/Squirtle.jpg" id="squirtle" value=3>
-        <img src="assets/images/Pikachu.jpeg" id="pikachu" value=4>
+        <img src="assets/images/Pikachu.jpeg" id="pikachu" value=5>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

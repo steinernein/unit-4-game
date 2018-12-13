@@ -1,7 +1,7 @@
 
 //  random target point goal
-var randomTargetPointGoal = Math.floor(Math.random() * 10);
-//alert(randomTargetPointGoal);
+var randomTargetPointGoal = Math.ceil(Math.random() * 100);
+
 
 
 // user point
@@ -9,11 +9,6 @@ var userPoint = 0;
 
 $("#targetPoint").text(randomTargetPointGoal);
 $("#yourPoint").text(userPoint);
-
-
-
-
-
 
 
 
@@ -27,17 +22,11 @@ $(document).ready(function() {
             $("#yourPoint").text(userPoint); // display your point to the page
             setTimeout(function() { // wait for half a second before alerting the message
                 alert("Congrats, you win!"); // alert the win message
-                // userPoint = 0;
+                
                 resetGame(); // call the reset function
             }, 500);
 
-            // $("#yourPoint").text(userPoint);
-            // userPoint = 0;
-
-            // $("#targetPoint").text(randomTargetPointGoal);
-            // randomTargetPointGoal = Math.floor(Math.random() * 10);
            
-            
 
             
             
@@ -46,45 +35,25 @@ $(document).ready(function() {
             $("#yourPoint").text(userPoint);
             setTimeout(function() {
                 alert("Game over. You lose!");
-                // userPoint = 0;
+                
                 resetGame(); // call the reset function
             }, 500);
 
-            // randomTargetPointGoal = Math.floor(Math.random() * 10);
-            // $("#targetPoint").text(randomTargetPointGoal);
-
-            
+    
           
 
         }
 
         $("#yourPoint").text(userPoint); // sets user value 
 
-       
-
-        
-
-
-
-
 
     });
 
     function resetGame() {
-        randomTargetPointGoal = Math.floor(Math.random() * 10);
+        randomTargetPointGoal = Math.ceil(Math.random() * 100);
         userPoint = 0;
         $("#targetPoint").text(randomTargetPointGoal);
         $("#yourPoint").text(userPoint);
     }
 
-
-
-
 });
-
-
-
-
-
-
-
